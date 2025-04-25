@@ -30,3 +30,9 @@ jobs:
           git add diseases.csv
           git commit -m "🔄 Auto-update diseases.csv from YAML files" || echo "No changes to commit"
           git push
+
+      - name: Convert and Sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.LOCAL_TOKEN }} # Use your generated token here
+          FIREBASE_CREDENTIALS: ${{ secrets.FIREBASE_CREDENTIALS }}
+        run: python .github/scripts/convert_and_sync.py
