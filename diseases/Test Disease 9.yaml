@@ -1,0 +1,24 @@
+name: Test Disease 9
+description: This is a test
+tags:
+- test
+symptoms:
+- test symptom
+triggers:
+- stress
+severity: mild
+duration: 1 week
+biologicalFilters:
+  ageRange: 18-40
+  gender: any
+  medicalConditions: []
+  medications: []
+  familyHistory: []
+  lifestyle: []
+  pastHospitalizations: []
+response:
+  explanation: This is a test explanation.
+  suggestedSpecialist: General Physician
+  careTips:
+  - rest
+  - hydrate
